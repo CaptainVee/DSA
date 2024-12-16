@@ -6,7 +6,7 @@ string tournamentWinner(
   vector<vector<string>> competitions, vector<int> results
 ) {
   string best_team {""};
-  map<string, int> hash {};
+  unordered_map<string, int> hash {};
   string winner {};
   
   for(int i {0}; i < results.size(); i++){
